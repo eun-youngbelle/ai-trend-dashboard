@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trend & Tool Pulse 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">AI TREND PULSE</div>
+            <div class="update-info">Last Updated: <span id="last-updated">-</span></div>
+        </header>
+
+        <section class="hero animate-fade">
+            <h1>2026 AI Trend Analysis</h1>
+            <p>5대 글로벌 유튜브 채널의 인사이트를 한 곳에서 확인하세요. 영어권 최신 트렌드를 한국어로 분석하여 제공합니다.</p>
+        </section>
+
+        <section class="animate-fade">
+            <h2 class="section-title">2026 AI Interest Radar (전체 관심도 시각화)</h2>
+            <div class="radar-grid">
+                <div class="strategic-card">
+                    <h3>Popularity by Theme</h3>
+                    <div id="chart-container" class="chart-container" style="margin-top: 1.5rem;"></div>
+                </div>
+                <div class="strategic-card">
+                    <h3>Trending Keywords</h3>
+                    <div id="bubble-cloud" class="bubble-cloud" style="margin-top: 1.5rem;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="animate-fade">
+            <h2 class="section-title">Strategic Pulse (2026 전략 분석)</h2>
+            <div class="strategic-grid">
+                <div class="strategic-card">
+                    <h3>2026 AI Strategic Roadmap</h3>
+                    <div id="roadmap-container" style="margin-top: 1.5rem;"></div>
+                </div>
+                <div class="strategic-card">
+                    <h3>Cross-Channel Tool Matrix</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr><th>Tool</th><th>Focus</th><th>Strength</th></tr>
+                        </thead>
+                        <tbody id="tool-matrix-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="animate-fade">
+            <h2 class="section-title">Trend Insights (공통 인사이트)</h2>
+        <div id="insights-grid" class="insights-grid animate-fade">
+            <!-- Dynamic Content -->
+        </div>
+
+        <h2 class="section-title">Featured Tools (추천 AI 툴)</h2>
+        <div id="tools-scroll" class="tools-scroll animate-fade">
+            <!-- Dynamic Content -->
+        </div>
+
+        <h2 class="section-title">Creators (유튜버 분석)</h2>
+        <div id="channels-grid" class="channels-grid animate-fade" style="margin-bottom: 4rem;">
+            <!-- Dynamic Content -->
+        </div>
+
+        <section class="animate-fade">
+            <h2 class="section-title">Vanguard Hub (엔터프라이즈 & 오픈소스)</h2>
+            <div class="vanguard-grid">
+                <div class="strategic-card">
+                    <h3>Official AI Lab Feed</h3>
+                    <div id="official-news-list" class="news-feed" style="margin-top: 1.5rem;"></div>
+                </div>
+                <div class="strategic-card">
+                    <h3>GitHub AI Star Tracker (Top 5)</h3>
+                    <div id="github-repo-list" class="repo-list" style="margin-top: 1.5rem;"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <!-- Keyword Focus Modal -->
+    <div id="modal-backdrop" class="modal-backdrop" onclick="closeFocusView()"></div>
+    <div id="focus-modal" class="focus-modal">
+        <div class="modal-header">
+            <h2 id="modal-title">Topic Focus</h2>
+            <button class="close-btn" onclick="closeFocusView()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h4>Related Videos</h4>
+                <div id="modal-videos" class="modal-results-grid"></div>
+            </div>
+            <div class="modal-section">
+                <h4>Related Professional Resources</h4>
+                <div id="modal-resources" class="modal-results-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
